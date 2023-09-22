@@ -18,3 +18,9 @@ jobs:
 
           - name: cat swapi.html
             run: cat swapi.html 
+
+          - name: Display a secret
+            run: echo "Hello, ${{secrets.DBPASSWORD}}"
+
+          - name: Display a variable
+            run: echo "Hello, ${{env.MYFATHER}}!"
